@@ -1,0 +1,160 @@
+:root {
+    --blue: #3498db;
+    --blue2: #2980b9;
+    --green: #2ecc71;
+    --green2: #27ae60;
+    --red: #e74c3c;
+    --red2: #c0392b;
+    --quicksand: 'Quicksand', sans-serif;
+    --bangers: 'bangers', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    position: fixed;
+    top: 0;
+
+    width: 100%;
+    height: 60px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: var(--blue2);
+}
+
+header>a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+header>nav {
+    margin-right: 20px;
+}
+
+header>nav>a {
+    color: #fff;
+    text-decoration: none;
+    margin: 10px;
+}
+
+main {
+    width: 50%;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 80px 0 40px 0;
+    /* border: 1px solid #ccc; */
+}
+
+main>h1 {
+    margin-bottom: 40px;
+}
+
+.article {
+    width: 90%;
+    height: auto;
+
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px #ccc;
+}
+
+.titreArticle {
+    width: 100%;
+    height: auto;
+
+    padding: 10px;
+    background-color: #ccc;
+}
+
+.contenuArticle {
+    position: relative;
+
+    width: 100%;
+    height: auto;
+
+    padding: 10px;
+}
+
+.editComment {
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /* border: 1px solid #ccc; */
+    margin: 40px;
+}
+
+.editComment>textarea {
+    width: 75%;
+    height: 200px;
+
+    margin: 20px;
+}
+
+.editComment>input {
+    padding: 10px;
+}
+
+.commentaire {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+
+    text-decoration: none;
+    /* border: 1px solid #ccc; */
+}
+
+.retourPosts {
+    margin: 0 0 20px 0;
+}
+
+.commentaires {
+    width: auto;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px #ccc;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+h2 {
+    margin: 20px;
+}
+
+.commentTitle {
+    margin: 20px 0;
+}
