@@ -27,10 +27,9 @@
 <body>
 
     <header>
-        <a href="#">Mon Blog</a>
+        <a href="index.php">Mon Blog</a>
 
         <nav>
-            <a href="index.php">Accueil</a>
             <a href="#articles.php">Articles</a>
             <a href="#">Inscription</a>
             <a href="#">Connexion</a>
