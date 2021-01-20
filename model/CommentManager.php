@@ -33,6 +33,7 @@ class CommentManager extends Manager {
         return $affectedLines;
     }
 
+    // Édition d'un commentaire
     public function editComment($commentId, $comment) {
         $db = $this->dbConnect();
         $comments = $db->prepare('UPDATE comments SET comment = ?, comment_date = NOW() WHERE id = ?');

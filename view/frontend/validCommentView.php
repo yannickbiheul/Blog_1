@@ -2,7 +2,7 @@
 
 <?php ob_start(); ?>
 
-<h2>Éditer commentaire</h2>
+<h2>Commentaire édité !</h2>
 
 <?php
     while ($commentaire = $comment->fetch()) {
@@ -15,12 +15,7 @@
     }
 ?>
 
-<form action="index.php?action=validComment&amp;id=<?= $post['id'] ?>" method="POST" class="editComment">
-        <textarea placeholder="Votre nouveau commentaire" name="comment"></textarea>
-        <input type="submit">
-</form>
-
-<a href="index.php?action=post&amp;id=<?= $data['id'] ?>">Retour aux Commentaires</a>
+<a href="index.php?action=editCommentt&amp;id=<?= $post['id'] ?>&amp,comment=<?= $_POST['comment'] ?>">Retour aux Commentaires</a>
 
 
 <?php $content = ob_get_clean(); ?>

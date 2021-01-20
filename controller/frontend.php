@@ -46,9 +46,16 @@ function oneComment($commentId) {
     require('view/frontend/editCommentView.php');
 }
 
+// Validation d'un commentaire
+function validComment() {
+    require('view/frontend/validCommentView.php');
+}
+
 // Modification d'un commentaire
 function editComment($commentId) {
     $commentManager = new \Deskad\Blog\Model\CommentManager();
     $comment = $commentManager->editComment($commentId);
+
+    require('view/frontend/validCommentView.php');
 }
 
